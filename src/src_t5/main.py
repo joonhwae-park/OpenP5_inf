@@ -103,6 +103,8 @@ def single_main():
         raise NotImplementError
         
     model = P5_T5.from_pretrained(args.backbone, config=config)
+    #new_vocab_size = 32128
+    #model.resize_token_embeddings(new_vocab_size)
     model.to(device)
     
     if args.item_indexing == 'collaborative':
@@ -182,6 +184,8 @@ def distributed_main(local_rank, args):
     
         
     model = P5_T5.from_pretrained(args.backbone, config=config)
+    #new_vocab_size = 32128   # FOR BEAUTY DATASET
+    #model.resize_token_embeddings(new_vocab_size)  # FOR BEAUTY DATASET
     model.to(device)
     
     

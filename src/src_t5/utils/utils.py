@@ -45,6 +45,7 @@ def save_pickle(data, filename):
         
 def ReadLineFromFile(path):
     if not os.path.exists(path):
+        #print(os.path.abspath(path))
         raise FileNotFoundError
     lines = []
     with open(path,'r') as fd:
@@ -84,6 +85,7 @@ def setup_logging(args):
     folder = os.path.join(args.log_dir, folder_name)
     if not os.path.exists(folder):
         os.makedirs(folder)
+    #print(args.log_name)
     log_file = os.path.join(args.log_dir, folder_name, args.log_name + '.log')
     
     for handler in logging.root.handlers[:]:
@@ -99,7 +101,10 @@ def log_name(args):
         folder_name = 'SP5'
     else:
         folder_name = args.datasets
-    params = [str(args.distributed), str(args.sample_prompt), str(args.his_prefix), str(args.skip_empty_his), str(args.max_his), str(args.master_port), folder_name, args.tasks, args.backbone, args.item_indexing, str(args.lr), str(args.epochs), str(args.batch_size), args.sample_num, args.prompt_file[3:-4]]
+    # ML1M & Movietweetings_LAB code
+    params = [str(args.distributed), str(args.sample_prompt), str(args.his_prefix), str(args.skip_empty_his), str(args.max_his), str(args.master_port), folder_name, args.tasks, args.backbone, args.item_indexing, str(args.lr), str(args.epochs), str(args.batch_size), args.sample_num, args.prompt_file[6:-4]]
+    # Movietweetings (Original code)
+    #params = [str(args.distributed), str(args.sample_prompt), str(args.his_prefix), str(args.skip_empty_his), str(args.max_his), str(args.master_port), folder_name, args.tasks, args.backbone, args.item_indexing, str(args.lr), str(args.epochs), str(args.batch_size), args.sample_num, args.prompt_file[3:-4]]
     return '_'.join(params)
 
 def setup_model_path(args):

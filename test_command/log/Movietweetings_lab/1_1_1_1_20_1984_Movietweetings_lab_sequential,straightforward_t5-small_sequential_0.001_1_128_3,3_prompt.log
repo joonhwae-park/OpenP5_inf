@@ -1,0 +1,43 @@
+2025-03-31 03:59:37,513 - root - INFO - {'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'Movietweetings_sequential.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Movietweetings_lab', 'prompt_file': '../../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'unseen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 1, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 1, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 1, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 1, 'test_filtered': 1, 'test_filtered_batch': 0, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_Movietweetings_lab_sequential,straightforward_t5-small_sequential_0.001_1_128_3,3_prompt', 'model_path': '../checkpoint/Movietweetings_sequential.pt'}
+2025-03-31 03:59:37,514 - root - INFO - Generating data for Movietweetings_lab dataset
+2025-03-31 03:59:37,514 - root - INFO - Get prompt template from ../../prompt.txt
+2025-03-31 03:59:37,514 - root - INFO - Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+2025-03-31 03:59:37,515 - root - INFO - Required info: ['history', 'dataset', 'target', 'user_id']
+2025-03-31 03:59:37,515 - root - INFO - Reindex data with sequential indexing method
+2025-03-31 03:59:55,238 - root - INFO - loading training data
+2025-03-31 03:59:55,243 - root - INFO - Getting prompt information
+2025-03-31 03:59:55,290 - root - INFO - Input: Here is the purchase history of Movietweetings_lab user_1 : Movietweetings_lab item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings_lab item_1035 
+2025-03-31 03:59:55,386 - root - INFO - Use t5-small backbone model
+2025-03-31 03:59:57,446 - root - INFO - Random initialize number related tokens
+2025-03-31 03:59:59,047 - root - INFO - Building Optimizer and Scheduler
+2025-03-31 03:59:59,047 - root - INFO - Batch per epoch: 40
+2025-03-31 03:59:59,048 - root - INFO - Total steps: 40
+2025-03-31 03:59:59,048 - root - INFO - Warmup proportion: 0.05
+2025-03-31 03:59:59,048 - root - INFO - Warm up steps: 2
+2025-03-31 03:59:59,049 - root - INFO - Building Optimizer AdamW
+2025-03-31 03:59:59,145 - root - INFO - Start training
+2025-03-31 03:59:59,146 - root - INFO - testing filtered Movietweetings_lab dataset on sequential task
+2025-03-31 04:00:08,045 - root - INFO - hit@5: 0.125
+2025-03-31 04:00:08,045 - root - INFO - hit@10: 0.171875
+2025-03-31 04:00:08,045 - root - INFO - ndcg@5: 0.13889376730432856
+2025-03-31 04:00:08,045 - root - INFO - ndcg@10: 0.2035266180466379
+2025-03-31 04:00:08,045 - root - INFO - testing filtered Movietweetings_lab dataset on straightforward task
+2025-03-31 04:00:16,320 - root - INFO - hit@5: 0.03125
+2025-03-31 04:00:16,320 - root - INFO - hit@10: 0.203125
+2025-03-31 04:00:16,320 - root - INFO - ndcg@5: 0.092139347464981
+2025-03-31 04:00:16,320 - root - INFO - ndcg@10: 0.1978127964599649
+2025-03-31 04:00:16,320 - root - INFO - Start training for epoch 1
+2025-03-31 04:00:16,367 - root - INFO - Input: Here is the purchase history of Movietweetings_lab user_1 : Movietweetings_lab item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings_lab item_1035 
+2025-03-31 04:00:28,723 - root - INFO - The average training loss for epoch 1 is 1.9097490310668945
+2025-03-31 04:00:29,221 - root - INFO - Save the current model to ../checkpoint/Movietweetings_sequential.pt
+2025-03-31 04:00:29,223 - root - INFO - Load model from ../checkpoint/Movietweetings_sequential.pt
+2025-03-31 04:00:29,356 - root - INFO - testing filtered Movietweetings_lab dataset on sequential task
+2025-03-31 04:00:37,736 - root - INFO - hit@5: 0.125
+2025-03-31 04:00:37,736 - root - INFO - hit@10: 0.1875
+2025-03-31 04:00:37,736 - root - INFO - ndcg@5: 0.14611427828309387
+2025-03-31 04:00:37,737 - root - INFO - ndcg@10: 0.21628975381562338
+2025-03-31 04:00:37,737 - root - INFO - testing filtered Movietweetings_lab dataset on straightforward task
+2025-03-31 04:00:45,999 - root - INFO - hit@5: 0.109375
+2025-03-31 04:00:46,000 - root - INFO - hit@10: 0.21875
+2025-03-31 04:00:46,000 - root - INFO - ndcg@5: 0.1248148940239969
+2025-03-31 04:00:46,000 - root - INFO - ndcg@10: 0.21107409536177182

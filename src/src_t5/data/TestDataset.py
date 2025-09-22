@@ -17,7 +17,8 @@ import re
 class TestDataset(Dataset):
     def __init__(self, args, dataset, task):
         super().__init__()
-        self.data_path = args.data_path
+        #self.data_path = args.data_path
+        self.data_path = "/scratch/jpa2742/OpenP5/data"
         self.dataset = dataset
         self.task = task
         self.item_indexing = args.item_indexing

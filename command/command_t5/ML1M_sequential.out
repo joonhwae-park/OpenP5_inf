@@ -1,0 +1,61 @@
+/scratch/jpa2742/OpenP5/command
+{'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'model.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'ML1M', 'prompt_file': '../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'seen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 20, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 10, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 1, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 0, 'test_filtered': 0, 'test_filtered_batch': 1, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_ML1M_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt', 'model_path': '../model/ML1M/1_1_1_1_20_1984_ML1M_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt.pt'}
+Generating data for ML1M dataset
+Get prompt template from ../prompt.txt
+Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+Required info: ['history', 'dataset', 'user_id', 'target']
+Reindex data with sequential indexing method
+loading training data
+Getting prompt information
+Input: Here is the purchase history of ML1M user_1 : ML1M item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: ML1M item_1035 
+Use t5-small backbone model
+Random initialize number related tokens
+Building Optimizer and Scheduler
+Batch per epoch: 23004
+Total steps: 230040
+Warmup proportion: 0.05
+Warm up steps: 11502
+Building Optimizer AdamW
+Start training
+Start training for epoch 1
+Input: According to what items ML1M user_1 has purchased : ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , Can you recommend another item to the user ? , Output: ML1M item_1035 
+The average training loss for epoch 1 is 0.9282523393630981
+Start training for epoch 2
+Input: After buying ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , what is the next item that could be recommended for ML1M user_1 ? , Output: ML1M item_1035 
+The average training loss for epoch 2 is 0.7607194781303406
+Start training for epoch 3
+Input: According to what items ML1M user_1 has purchased : ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , Can you recommend another item to the user ? , Output: ML1M item_1035 
+The average training loss for epoch 3 is 0.737473726272583
+Start training for epoch 4
+Input: Here is the purchase history of ML1M user_1 : ML1M item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: ML1M item_1035 
+The average training loss for epoch 4 is 0.7230737805366516
+Start training for epoch 5
+Input: What would ML1M user_1 be likely to purchase next after buying ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: ML1M item_1035 
+The average training loss for epoch 5 is 0.7124285697937012
+Start training for epoch 6
+Input: The ML1M user_1 has bought items : ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , What else do you think is necessary for the user ? , Output: ML1M item_1035 
+The average training loss for epoch 6 is 0.7036458849906921
+Start training for epoch 7
+Input: Can you recommend the next item for ML1M user_1 , given the user 's purchase of ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: ML1M item_1035 
+The average training loss for epoch 7 is 0.6957178115844727
+Start training for epoch 8
+Input: Here is the purchase history of ML1M user_1 : ML1M item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: ML1M item_1035 
+The average training loss for epoch 8 is 0.6882278323173523
+Start training for epoch 9
+Input: What would ML1M user_1 be likely to purchase next after buying ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: ML1M item_1035 
+The average training loss for epoch 9 is 0.681047797203064
+Start training for epoch 10
+Input: By analyzing the ML1M user_1 's purchase of ML1M items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , what is the next item expected to be bought ? , Output: ML1M item_1035 
+The average training loss for epoch 10 is 0.6748380661010742
+Save the current model to ../model/ML1M/1_1_1_1_20_1984_ML1M_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt.pt
+Load model from ../model/ML1M/1_1_1_1_20_1984_ML1M_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt.pt
+testing ML1M dataset on sequential task
+hit@5: 0.16804635761589404
+hit@10: 0.24933774834437086
+ndcg@5: 0.11335127690045252
+ndcg@10: 0.13947079922986194
+testing ML1M dataset on straightforward task
+hit@5: 0.0097682119205298
+hit@10: 0.021357615894039735
+ndcg@5: 0.005304589217363546
+ndcg@10: 0.008967165331522226

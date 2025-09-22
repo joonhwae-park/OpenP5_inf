@@ -1,0 +1,55 @@
+{'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'Movietweetings_sequential.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Movietweetings_lab', 'prompt_file': '../../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'unseen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 1, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 5, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 1, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 1, 'test_filtered': 1, 'test_filtered_batch': 0, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_Movietweetings_lab_sequential,straightforward_t5-small_sequential_0.001_5_128_3,3_prompt', 'model_path': '../checkpoint/Movietweetings_sequential.pt'}
+Generating data for Movietweetings_lab dataset
+Get prompt template from ../../prompt.txt
+Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+Required info: ['history', 'user_id', 'target', 'dataset']
+Reindex data with sequential indexing method
+loading training data
+Getting prompt information
+Input: Here is the purchase history of Movietweetings_lab user_1 : Movietweetings_lab item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings_lab item_1035 
+Use t5-small backbone model
+Random initialize number related tokens
+Building Optimizer and Scheduler
+Batch per epoch: 40
+Total steps: 200
+Warmup proportion: 0.05
+Warm up steps: 10
+Building Optimizer AdamW
+Start training
+testing filtered Movietweetings_lab dataset on sequential task
+hit@5: 0.125
+hit@10: 0.171875
+ndcg@5: 0.13889376730432856
+ndcg@10: 0.2035266180466379
+testing filtered Movietweetings_lab dataset on straightforward task
+hit@5: 0.03125
+hit@10: 0.203125
+ndcg@5: 0.092139347464981
+ndcg@10: 0.1978127964599649
+Start training for epoch 1
+Input: Here is the purchase history of Movietweetings_lab user_1 : Movietweetings_lab item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings_lab item_1035 
+The average training loss for epoch 1 is 2.389951467514038
+Start training for epoch 2
+Input: According to what items Movietweetings_lab user_1 has purchased : Movietweetings_lab items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , Can you recommend another item to the user ? , Output: Movietweetings_lab item_1035 
+The average training loss for epoch 2 is 0.6849206686019897
+Start training for epoch 3
+Input: Can you recommend the next item for Movietweetings_lab user_1 , given the user 's purchase of Movietweetings_lab items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: Movietweetings_lab item_1035 
+The average training loss for epoch 3 is 0.598284125328064
+Start training for epoch 4
+Input: What would Movietweetings_lab user_1 be likely to purchase next after buying Movietweetings_lab items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: Movietweetings_lab item_1035 
+The average training loss for epoch 4 is 0.556624174118042
+Start training for epoch 5
+Input: I find the purchase list of Movietweetings_lab user_1 : Movietweetings_lab items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , I wonder what other itmes does the user need . Can you help me decide ? , Output: Movietweetings_lab item_1035 
+The average training loss for epoch 5 is 0.5361054539680481
+Save the current model to ../checkpoint/Movietweetings_sequential.pt
+Load model from ../checkpoint/Movietweetings_sequential.pt
+testing filtered Movietweetings_lab dataset on sequential task
+hit@5: 0.125
+hit@10: 0.15625
+ndcg@5: 0.17630892257802072
+ndcg@10: 0.2355629917927999
+testing filtered Movietweetings_lab dataset on straightforward task
+hit@5: 0.109375
+hit@10: 0.125
+ndcg@5: 0.17026434746498098
+ndcg@10: 0.22531956264859412

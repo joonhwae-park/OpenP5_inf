@@ -189,6 +189,7 @@ class DistributedRunner(SingleRunner):
                 
     def test(self, path=None):
         self.model.eval()
+        #self.model.module.resize_token_embeddings(32128) # FOR BEAUTY DATASET
         if path:
             self.model.module.load_state_dict(torch.load(path, map_location=self.device))
         for loader in self.testloaders:
@@ -207,12 +208,17 @@ class DistributedRunner(SingleRunner):
         test_total = 0
         with torch.no_grad():
             candidates = set(testloader.dataset.all_items)
+            #print(f"[DEBUG] Dataset: {testloader.dataset.dataset}")
+            #print(f"[DEBUG] Candidates (first 5): {list(candidates)[:5]}")
+            encoded_candidates = [[0] + self.tokenizer.encode(f"{testloader.dataset.dataset} item_{candidate}") for candidate in list(candidates)[:5]]
+            #print(f"[DEBUG] Example encoded items: {encoded_candidates}")
             candidate_trie = gt.Trie(
                 [
                     [0] + self.tokenizer.encode(f"{testloader.dataset.dataset} item_{candidate}")
                     for candidate in candidates
                 ]
                 )
+
             prefix_allowed_tokens = gt.prefix_allowed_tokens_fn(candidate_trie)
             
             metrics_res = np.array([0.0] * len(self.metrics))
@@ -294,7 +300,15 @@ class DistributedRunner(SingleRunner):
                     for candidate in user_candidate
                 ]
                 )
+                
+                if len(candidate_trie) == 0:
+                    print("[DEBUG] Warning: candidate_trie is empty!")
+
                 prefix_allowed_tokens = gt.prefix_allowed_tokens_fn(candidate_trie)
+                
+                test_sentence = torch.tensor([0])
+                allowed_tokens = prefix_allowed_tokens(0, test_sentence)
+                #print(f"[DEBUG] Allowed tokens for batch {str(batch)}, initial state: {allowed_tokens}")
                 
                 prediction = self.model.module.generate(
                         input_ids=input_ids,
@@ -342,12 +356,14 @@ class DistributedRunner(SingleRunner):
         test_total = 0
         with torch.no_grad():
             candidates = testloader.dataset.all_items
+            #print(f"Candidates: {candidates}")
             candidate_trie = gt.Trie(
                 [
                     [0] + self.tokenizer.encode(f"{testloader.dataset.dataset} item_{candidate}")
                     for candidate in candidates
                 ]
             )
+            #print(f"Trie contents: {candidate_trie.trie_dict}")
             prefix_allowed_tokens = gt.prefix_allowed_tokens_fn(candidate_trie)
             
             metrics_res = np.array([0.0] * len(self.metrics))

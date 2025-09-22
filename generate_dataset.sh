@@ -1,3 +1,19 @@
+#!/bin/bash
+#SBATCH --job-name=generate_dataset       # Name of the job
+#SBATCH --nodes=1                   # Number of nodes
+#SBATCH --partition=a10g-8-gm192-c192-m768        # partition name
+#SBATCH --gpus=2                       # Enter no.of gpus needed
+#SBATCH --output=generate_dataset.out          # Name of the output file
+#SBATCH --error=generate_dataset.err           # Name of the error file
+#SBATCH --mem=256G                    # Memory Needed
+#SBATCH --mail-type=end                # send mail when job ends
+#SBATCH --mail-type=fail               # send mail if job fails
+#SBATCH --mail-user=jpa2742@emory.edu   # Replace mailid
+conda init bash > /dev/null 2>&1
+source /users/jpa2742/.bashrc
+conda activate openp5_t5
+
+
 ts=100
 cluster=10
 for dataset in Beauty ML100K ML1M Yelp Electronics Movies CDs Clothing Taobao LastFM

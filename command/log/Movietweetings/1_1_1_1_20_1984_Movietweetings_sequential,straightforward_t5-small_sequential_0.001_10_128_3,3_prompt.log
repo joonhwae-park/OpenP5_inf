@@ -1,0 +1,60 @@
+2025-03-22 23:47:42,320 - root - INFO - {'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'model.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Movietweetings', 'prompt_file': '../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'seen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 20, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 10, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 1, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 0, 'test_filtered': 0, 'test_filtered_batch': 1, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt', 'model_path': '../model/Movietweetings/1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt.pt'}
+2025-03-22 23:47:42,321 - root - INFO - Generating data for Movietweetings dataset
+2025-03-22 23:47:42,322 - root - INFO - Get prompt template from ../prompt.txt
+2025-03-22 23:47:42,323 - root - INFO - Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+2025-03-22 23:47:42,323 - root - INFO - Required info: ['user_id', 'dataset', 'target', 'history']
+2025-03-22 23:47:42,459 - root - INFO - Reindex data with sequential indexing method
+2025-03-22 23:48:00,342 - root - INFO - loading training data
+2025-03-22 23:48:03,482 - root - INFO - Getting prompt information
+2025-03-22 23:48:29,003 - root - INFO - Input: Here is the purchase history of Movietweetings user_1 : Movietweetings item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings item_1035 
+2025-03-22 23:48:30,144 - root - INFO - Use t5-small backbone model
+2025-03-22 23:48:31,651 - root - INFO - Random initialize number related tokens
+2025-03-22 23:48:34,668 - root - INFO - Building Optimizer and Scheduler
+2025-03-22 23:48:34,668 - root - INFO - Batch per epoch: 17170
+2025-03-22 23:48:34,668 - root - INFO - Total steps: 171700
+2025-03-22 23:48:34,668 - root - INFO - Warmup proportion: 0.05
+2025-03-22 23:48:34,668 - root - INFO - Warm up steps: 8585
+2025-03-22 23:48:34,670 - root - INFO - Building Optimizer AdamW
+2025-03-22 23:48:35,323 - root - INFO - Start training
+2025-03-22 23:48:35,325 - root - INFO - Start training for epoch 1
+2025-03-22 23:49:01,265 - root - INFO - Input: Can you recommend the next item for Movietweetings user_1 , given the user 's purchase of Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: Movietweetings item_1035 
+2025-03-23 01:03:00,799 - root - INFO - The average training loss for epoch 1 is 0.8444563746452332
+2025-03-23 01:03:00,802 - root - INFO - Start training for epoch 2
+2025-03-23 01:03:26,779 - root - INFO - Input: Here is the purchase history of Movietweetings user_1 : Movietweetings item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings item_1035 
+2025-03-23 02:17:26,366 - root - INFO - The average training loss for epoch 2 is 0.6973804831504822
+2025-03-23 02:17:26,369 - root - INFO - Start training for epoch 3
+2025-03-23 02:17:52,205 - root - INFO - Input: Here is the purchase history of Movietweetings user_1 : Movietweetings item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings item_1035 
+2025-03-23 03:31:49,960 - root - INFO - The average training loss for epoch 3 is 0.6819835305213928
+2025-03-23 03:31:49,963 - root - INFO - Start training for epoch 4
+2025-03-23 03:32:15,929 - root - INFO - Input: The Movietweetings user_1 has bought items : Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , What else do you think is necessary for the user ? , Output: Movietweetings item_1035 
+2025-03-23 04:46:12,487 - root - INFO - The average training loss for epoch 4 is 0.6708922386169434
+2025-03-23 04:46:12,490 - root - INFO - Start training for epoch 5
+2025-03-23 04:46:38,416 - root - INFO - Input: According to what items Movietweetings user_1 has purchased : Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , Can you recommend another item to the user ? , Output: Movietweetings item_1035 
+2025-03-23 06:00:37,314 - root - INFO - The average training loss for epoch 5 is 0.661660373210907
+2025-03-23 06:00:37,317 - root - INFO - Start training for epoch 6
+2025-03-23 06:01:03,299 - root - INFO - Input: Can you recommend the next item for Movietweetings user_1 , given the user 's purchase of Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: Movietweetings item_1035 
+2025-03-23 07:15:02,432 - root - INFO - The average training loss for epoch 6 is 0.6537613868713379
+2025-03-23 07:15:02,436 - root - INFO - Start training for epoch 7
+2025-03-23 07:15:28,386 - root - INFO - Input: Can you recommend the next item for Movietweetings user_1 , given the user 's purchase of Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 ? , Output: Movietweetings item_1035 
+2025-03-23 08:29:28,875 - root - INFO - The average training loss for epoch 7 is 0.6465576887130737
+2025-03-23 08:29:28,878 - root - INFO - Start training for epoch 8
+2025-03-23 08:29:54,801 - root - INFO - Input: I find the purchase list of Movietweetings user_1 : Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , I wonder what other itmes does the user need . Can you help me decide ? , Output: Movietweetings item_1035 
+2025-03-23 09:43:53,907 - root - INFO - The average training loss for epoch 8 is 0.6397013068199158
+2025-03-23 09:43:53,910 - root - INFO - Start training for epoch 9
+2025-03-23 09:44:19,950 - root - INFO - Input: I find the purchase list of Movietweetings user_1 : Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , I wonder what other itmes does the user need . Can you help me decide ? , Output: Movietweetings item_1035 
+2025-03-23 10:58:19,013 - root - INFO - The average training loss for epoch 9 is 0.6332663893699646
+2025-03-23 10:58:19,016 - root - INFO - Start training for epoch 10
+2025-03-23 10:58:44,987 - root - INFO - Input: The Movietweetings user_1 has bought items : Movietweetings items item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , What else do you think is necessary for the user ? , Output: Movietweetings item_1035 
+2025-03-23 12:12:43,416 - root - INFO - The average training loss for epoch 10 is 0.6280382871627808
+2025-03-23 12:12:44,006 - root - INFO - Save the current model to ../model/Movietweetings/1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt.pt
+2025-03-23 12:12:44,072 - root - INFO - Load model from ../model/Movietweetings/1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt.pt
+2025-03-23 12:12:44,293 - root - INFO - testing Movietweetings dataset on sequential task
+2025-03-23 12:23:14,890 - root - INFO - hit@5: 0.15131073349842028
+2025-03-23 12:23:14,891 - root - INFO - hit@10: 0.21368798565451286
+2025-03-23 12:23:14,891 - root - INFO - ndcg@5: 0.10588595234138058
+2025-03-23 12:23:14,891 - root - INFO - ndcg@10: 0.1260050996195966
+2025-03-23 12:23:14,893 - root - INFO - testing Movietweetings dataset on straightforward task
+2025-03-23 12:32:54,014 - root - INFO - hit@5: 0.03240543079156349
+2025-03-23 12:32:54,014 - root - INFO - hit@10: 0.05827854154213987
+2025-03-23 12:32:54,014 - root - INFO - ndcg@5: 0.01975375606167123
+2025-03-23 12:32:54,014 - root - INFO - ndcg@10: 0.02797881473217838

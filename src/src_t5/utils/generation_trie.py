@@ -68,6 +68,7 @@ class Trie(object):
                 return append_trie.get(prefix_sequence)
             else:
                 return []
+                #return [1]
 
     def __iter__(self):
         def _traverse(prefix_sequence, trie_dict):
@@ -92,6 +93,13 @@ def prefix_allowed_tokens_fn(candidate_trie):
     def prefix_allowed_tokens(batch_id, sentence):
         sentence = sentence.tolist()
         trie_out = candidate_trie.get(sentence)
+        #print(f"Batch {batch_id} - Input Sentence: {sentence}")
+        #print(f"Batch {batch_id} - Allowed Tokens: {trie_out}")
+        
+        #if not trie_out:
+        #    print(f"Batch {batch_id} - No valid tokens found. Using EOS token as fallback.")
+        #    return [AutoTokenizer.from_pretrained('t5-base').eos_token_id]
+            
         return trie_out
 
     return prefix_allowed_tokens

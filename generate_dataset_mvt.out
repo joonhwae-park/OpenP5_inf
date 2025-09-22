@@ -1,0 +1,72 @@
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 732521 samples in Movietweetings training data.
+data constructed
+there are 14650420 prompts in Movietweetings training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings validation data.
+['seen', '0']
+data constructed
+there are 46842 prompts in Movietweetings validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings test data.
+['seen', '0']
+data constructed
+there are 46842 prompts in Movietweetings test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings test data.
+['unseen', '0']
+data constructed
+there are 46842 prompts in Movietweetings test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 732521 samples in Movietweetings training data.
+data constructed
+there are 14650420 prompts in Movietweetings training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings validation data.
+['seen', '0']
+data constructed
+there are 46842 prompts in Movietweetings validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings test data.
+['seen', '0']
+data constructed
+there are 46842 prompts in Movietweetings test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings test data.
+['unseen', '0']
+data constructed
+there are 46842 prompts in Movietweetings test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 732521 samples in Movietweetings training data.
+data constructed
+there are 14650420 prompts in Movietweetings training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings validation data.
+['seen', '0']
+data constructed
+there are 46842 prompts in Movietweetings validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings test data.
+['seen', '0']
+data constructed
+there are 46842 prompts in Movietweetings test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 23421 samples in Movietweetings test data.
+['unseen', '0']
+data constructed
+there are 46842 prompts in Movietweetings test data.

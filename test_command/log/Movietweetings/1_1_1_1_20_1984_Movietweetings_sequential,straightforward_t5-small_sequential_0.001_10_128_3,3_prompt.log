@@ -1,0 +1,57 @@
+2025-03-31 21:27:35,868 - root - INFO - {'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'Movietweetings_sequential.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Movietweetings', 'prompt_file': '../../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'unseen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 1, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 10, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 0, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 0, 'test_filtered': 1, 'test_filtered_batch': 0, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt', 'model_path': '../checkpoint/Movietweetings_sequential.pt'}
+2025-03-31 21:27:35,870 - root - INFO - Generating data for Movietweetings dataset
+2025-03-31 21:27:35,870 - root - INFO - Get prompt template from ../../prompt.txt
+2025-03-31 21:27:35,871 - root - INFO - Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+2025-03-31 21:27:35,871 - root - INFO - Required info: ['target', 'user_id', 'dataset', 'history']
+2025-03-31 21:27:36,163 - root - INFO - Reindex data with sequential indexing method
+2025-03-31 21:27:54,465 - root - INFO - loading training data
+2025-03-31 21:27:57,205 - root - INFO - Getting prompt information
+2025-03-31 21:28:18,559 - root - INFO - Input: Here is the purchase history of Movietweetings user_1 : Movietweetings item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings item_1035 
+2025-03-31 21:28:18,824 - root - INFO - Use t5-small backbone model
+2025-03-31 21:28:20,840 - root - INFO - Random initialize number related tokens
+2025-03-31 21:28:24,652 - root - INFO - Load model from ../checkpoint/Movietweetings_sequential.pt
+2025-03-31 21:28:25,314 - root - INFO - testing filtered Movietweetings dataset on sequential task
+2025-03-31 21:36:15,373 - root - INFO - {'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'Movietweetings_sequential.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Movietweetings', 'prompt_file': '../../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'unseen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 1, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 10, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 0, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 0, 'test_filtered': 1, 'test_filtered_batch': 0, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt', 'model_path': '../checkpoint/Movietweetings_sequential.pt'}
+2025-03-31 21:36:15,373 - root - INFO - Generating data for Movietweetings dataset
+2025-03-31 21:36:15,373 - root - INFO - Get prompt template from ../../prompt.txt
+2025-03-31 21:36:15,374 - root - INFO - Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+2025-03-31 21:36:15,374 - root - INFO - Required info: ['history', 'dataset', 'target', 'user_id']
+2025-03-31 21:36:15,483 - root - INFO - Reindex data with sequential indexing method
+2025-03-31 21:36:19,850 - root - INFO - loading training data
+2025-03-31 21:36:22,540 - root - INFO - Getting prompt information
+2025-03-31 21:36:43,302 - root - INFO - Input: Here is the purchase history of Movietweetings user_1 : Movietweetings item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings item_1035 
+2025-03-31 21:36:43,597 - root - INFO - Use t5-small backbone model
+2025-03-31 21:36:44,853 - root - INFO - Random initialize number related tokens
+2025-03-31 21:36:48,832 - root - INFO - Load model from ../checkpoint/Movietweetings_sequential.pt
+2025-03-31 21:36:48,942 - root - INFO - testing filtered Movietweetings dataset on sequential task
+2025-04-01 01:44:45,702 - root - INFO - hit@5: 0.0005123388267440868
+2025-04-01 01:44:45,708 - root - INFO - hit@10: 0.001665101186918282
+2025-04-01 01:44:45,708 - root - INFO - ndcg@5: 0.00027708823729703786
+2025-04-01 01:44:45,709 - root - INFO - ndcg@10: 0.0006514788689804537
+2025-04-01 01:44:45,714 - root - INFO - testing filtered Movietweetings dataset on straightforward task
+2025-04-01 05:52:35,948 - root - INFO - hit@5: 0.00046964392451541285
+2025-04-01 05:52:35,952 - root - INFO - hit@10: 0.0023482196225770645
+2025-04-01 05:52:35,952 - root - INFO - ndcg@5: 0.0002697262985785985
+2025-04-01 05:52:35,952 - root - INFO - ndcg@10: 0.0008693770447875261
+2025-04-01 18:32:18,022 - root - INFO - {'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'Movietweetings_sequential.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '1984', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Movietweetings', 'prompt_file': '../../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'unseen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 128, 'eval_batch_size': 1, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 10, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 0, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 0, 'valid_select': 0, 'test_before_train': 0, 'test_filtered': 1, 'test_filtered_batch': 0, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_1984_Movietweetings_sequential,straightforward_t5-small_sequential_0.001_10_128_3,3_prompt', 'model_path': '../checkpoint/Movietweetings_sequential.pt'}
+2025-04-01 18:32:18,025 - root - INFO - Generating data for Movietweetings dataset
+2025-04-01 18:32:18,025 - root - INFO - Get prompt template from ../../prompt.txt
+2025-04-01 18:32:18,025 - root - INFO - Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+2025-04-01 18:32:18,026 - root - INFO - Required info: ['dataset', 'target', 'history', 'user_id']
+2025-04-01 18:32:18,397 - root - INFO - Reindex data with sequential indexing method
+2025-04-01 18:32:36,600 - root - INFO - loading training data
+2025-04-01 18:32:39,439 - root - INFO - Getting prompt information
+2025-04-01 18:33:00,590 - root - INFO - Input: Here is the purchase history of Movietweetings user_1 : Movietweetings item item_1015 , item_1016 , item_1017 , item_1018 , item_1019 , item_1020 , item_1021 , item_1022 , item_1023 , item_1024 , item_1025 , item_1026 , item_1027 , item_1028 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 . I wonder what is the next recommended item for the user . , Output: Movietweetings item_1035 
+2025-04-01 18:33:01,419 - root - INFO - Use t5-small backbone model
+2025-04-01 18:33:02,734 - root - INFO - Random initialize number related tokens
+2025-04-01 18:33:06,384 - root - INFO - Load model from ../checkpoint/Movietweetings_sequential.pt
+2025-04-01 18:33:07,127 - root - INFO - testing filtered Movietweetings dataset on sequential task
+2025-04-01 22:40:11,093 - root - INFO - hit@5: 0.16215523866450346
+2025-04-01 22:40:11,099 - root - INFO - hit@10: 0.22444710101613868
+2025-04-01 22:40:11,099 - root - INFO - ndcg@5: 0.11198588082145831
+2025-04-01 22:40:11,099 - root - INFO - ndcg@10: 0.13204537805388222
+2025-04-01 22:40:11,104 - root - INFO - testing filtered Movietweetings dataset on straightforward task
+2025-04-02 02:48:08,733 - root - INFO - hit@5: 0.04265220732644522
+2025-04-02 02:48:08,738 - root - INFO - hit@10: 0.06989155494833917
+2025-04-02 02:48:08,738 - root - INFO - ndcg@5: 0.027073732429424638
+2025-04-02 02:48:08,738 - root - INFO - ndcg@10: 0.035765854414512833

@@ -1,0 +1,26 @@
+{'seed': 2023, 'model_dir': '../model', 'checkpoint_dir': '../checkpoint', 'model_name': 'Beauty_sequential.pt', 'log_dir': '../log', 'distributed': 1, 'gpu': '2,3', 'master_addr': 'localhost', 'master_port': '2000', 'logging_level': 20, 'data_path': '../data', 'item_indexing': 'sequential', 'tasks': 'sequential,straightforward', 'datasets': 'Beauty', 'prompt_file': '../../prompt.txt', 'sequential_order': 'original', 'collaborative_token_size': 200, 'collaborative_cluster': 20, 'collaborative_last_token': 'sequential', 'collaborative_float32': 0, 'max_his': 20, 'his_prefix': 1, 'his_sep': ' , ', 'skip_empty_his': 1, 'valid_prompt': 'seen:0', 'valid_prompt_sample': 1, 'valid_sample_num': '3,3', 'test_prompt': 'seen:0', 'sample_prompt': 1, 'sample_num': '3,3', 'batch_size': 64, 'eval_batch_size': 1, 'dist_sampler': 0, 'optim': 'AdamW', 'epochs': 20, 'lr': 0.001, 'clip': 1, 'logging_step': 100, 'warmup_prop': 0.05, 'gradient_accumulation_steps': 1, 'weight_decay': 0.01, 'adam_eps': 1e-06, 'dropout': 0.1, 'alpha': 2, 'train': 0, 'backbone': 't5-small', 'metrics': 'hit@5,hit@10,ndcg@5,ndcg@10', 'load': 0, 'random_initialize': 1, 'test_epoch': 1, 'valid_select': 0, 'test_before_train': 1, 'test_filtered': 0, 'test_filtered_batch': 1, 'world_size': 2, 'rank': 0, 'log_name': '1_1_1_1_20_2000_Beauty_sequential,straightforward_t5-small_sequential_0.001_20_64_3,3_prompt', 'model_path': '../checkpoint/Beauty_sequential.pt'}
+Generating data for Beauty dataset
+Get prompt template from ../../prompt.txt
+Considering {dataset} user_{user_id} has interacted with {dataset} items {history} . What is the next recommendation for the user ?
+Required info: ['dataset', 'target', 'history', 'user_id']
+Reindex data with sequential indexing method
+loading training data
+Getting prompt information
+Input: Here is the purchase history of Beauty user_6 : Beauty item item_1026 , item_1027 , item_1028 , item_1009 , item_1029 , item_1030 , item_1031 , item_1032 , item_1033 , item_1034 , item_1035 , item_1036 , item_1037 . I wonder what is the next recommended item for the user . , Output: Beauty item_1038 
+Use t5-small backbone model
+Random initialize number related tokens
+Load model from ../checkpoint/Beauty_sequential.pt
+testing Beauty dataset on sequential task
+Created a temporary directory at /tmp/tmplr6srf40
+Writing /tmp/tmplr6srf40/_remote_module_non_scriptable.py
+Created a temporary directory at /tmp/tmp9xxjn59i
+Writing /tmp/tmp9xxjn59i/_remote_module_non_scriptable.py
+hit@5: 0.045564299767483454
+hit@10: 0.0621981756394205
+ndcg@5: 0.03349838229607425
+ndcg@10: 0.03888801411160806
+testing Beauty dataset on straightforward task
+hit@5: 0.03179216598104096
+hit@10: 0.04386514040422107
+ndcg@5: 0.023922331422534054
+ndcg@10: 0.027786151189469022

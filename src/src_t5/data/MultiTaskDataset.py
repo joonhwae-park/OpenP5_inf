@@ -54,7 +54,8 @@ class MultiTaskDataset(Dataset):
         
     def __init__(self, args, dataset, mode):
         super().__init__()
-        self.data_path = args.data_path
+        #self.data_path = args.data_path
+        self.data_path = "/scratch/jpa2742/OpenP5/data"
         self.dataset = dataset
         self.tasks = args.tasks.split(',')
         if args.sample_prompt > 0:

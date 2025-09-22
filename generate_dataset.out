@@ -1,0 +1,696 @@
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 131413 samples in Beauty training data.
+data constructed
+there are 2628260 prompts in Beauty training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty validation data.
+['seen', '0']
+data constructed
+there are 44726 prompts in Beauty validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty test data.
+['seen', '0']
+data constructed
+there are 44726 prompts in Beauty test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty test data.
+['unseen', '0']
+data constructed
+there are 44726 prompts in Beauty test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 131413 samples in Beauty training data.
+data constructed
+there are 2628260 prompts in Beauty training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty validation data.
+['seen', '0']
+data constructed
+there are 44726 prompts in Beauty validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty test data.
+['seen', '0']
+data constructed
+there are 44726 prompts in Beauty test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty test data.
+['unseen', '0']
+data constructed
+there are 44726 prompts in Beauty test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 131413 samples in Beauty training data.
+data constructed
+there are 2628260 prompts in Beauty training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty validation data.
+['seen', '0']
+data constructed
+there are 44726 prompts in Beauty validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty test data.
+['seen', '0']
+data constructed
+there are 44726 prompts in Beauty test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 22363 samples in Beauty test data.
+['unseen', '0']
+data constructed
+there are 44726 prompts in Beauty test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 96458 samples in ML100K training data.
+data constructed
+there are 1929160 prompts in ML100K training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 943 samples in ML100K validation data.
+['seen', '0']
+data constructed
+there are 1886 prompts in ML100K validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 943 samples in ML100K test data.
+['seen', '0']
+data constructed
+there are 1886 prompts in ML100K test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 943 samples in ML100K test data.
+['unseen', '0']
+data constructed
+there are 1886 prompts in ML100K test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 96458 samples in ML100K training data.
+data constructed
+there are 1929160 prompts in ML100K training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 943 samples in ML100K validation data.
+['seen', '0']
+data constructed
+there are 1886 prompts in ML100K validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 943 samples in ML100K test data.
+['seen', '0']
+data constructed
+there are 1886 prompts in ML100K test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 943 samples in ML100K test data.
+['unseen', '0']
+data constructed
+there are 1886 prompts in ML100K test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 96458 samples in ML100K training data.
+data constructed
+there are 1929160 prompts in ML100K training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 943 samples in ML100K validation data.
+['seen', '0']
+data constructed
+there are 1886 prompts in ML100K validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 943 samples in ML100K test data.
+['seen', '0']
+data constructed
+there are 1886 prompts in ML100K test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 943 samples in ML100K test data.
+['unseen', '0']
+data constructed
+there are 1886 prompts in ML100K test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 981491 samples in ML1M training data.
+data constructed
+there are 19629820 prompts in ML1M training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M validation data.
+['seen', '0']
+data constructed
+there are 12080 prompts in ML1M validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M test data.
+['seen', '0']
+data constructed
+there are 12080 prompts in ML1M test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M test data.
+['unseen', '0']
+data constructed
+there are 12080 prompts in ML1M test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 981491 samples in ML1M training data.
+data constructed
+there are 19629820 prompts in ML1M training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M validation data.
+['seen', '0']
+data constructed
+there are 12080 prompts in ML1M validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M test data.
+['seen', '0']
+data constructed
+there are 12080 prompts in ML1M test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M test data.
+['unseen', '0']
+data constructed
+there are 12080 prompts in ML1M test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 981491 samples in ML1M training data.
+data constructed
+there are 19629820 prompts in ML1M training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M validation data.
+['seen', '0']
+data constructed
+there are 12080 prompts in ML1M validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M test data.
+['seen', '0']
+data constructed
+there are 12080 prompts in ML1M test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 6040 samples in ML1M test data.
+['unseen', '0']
+data constructed
+there are 12080 prompts in ML1M test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 3417590 samples in Yelp training data.
+data constructed
+there are 68351800 prompts in Yelp training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 277631 samples in Yelp validation data.
+['seen', '0']
+data constructed
+there are 555262 prompts in Yelp validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 277631 samples in Yelp test data.
+['seen', '0']
+data constructed
+there are 555262 prompts in Yelp test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 277631 samples in Yelp test data.
+['unseen', '0']
+data constructed
+there are 555262 prompts in Yelp test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 3417590 samples in Yelp training data.
+data constructed
+there are 68351800 prompts in Yelp training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 277631 samples in Yelp validation data.
+['seen', '0']
+data constructed
+there are 555262 prompts in Yelp validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 277631 samples in Yelp test data.
+['seen', '0']
+data constructed
+there are 555262 prompts in Yelp test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 277631 samples in Yelp test data.
+['unseen', '0']
+data constructed
+there are 555262 prompts in Yelp test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 1111979 samples in Electronics training data.
+data constructed
+there are 22239580 prompts in Electronics training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics validation data.
+['seen', '0']
+data constructed
+there are 384806 prompts in Electronics validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics test data.
+['seen', '0']
+data constructed
+there are 384806 prompts in Electronics test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics test data.
+['unseen', '0']
+data constructed
+there are 384806 prompts in Electronics test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 1111979 samples in Electronics training data.
+data constructed
+there are 22239580 prompts in Electronics training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics validation data.
+['seen', '0']
+data constructed
+there are 384806 prompts in Electronics validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics test data.
+['seen', '0']
+data constructed
+there are 384806 prompts in Electronics test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics test data.
+['unseen', '0']
+data constructed
+there are 384806 prompts in Electronics test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 1111979 samples in Electronics training data.
+data constructed
+there are 22239580 prompts in Electronics training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics validation data.
+['seen', '0']
+data constructed
+there are 384806 prompts in Electronics validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics test data.
+['seen', '0']
+data constructed
+there are 384806 prompts in Electronics test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 192403 samples in Electronics test data.
+['unseen', '0']
+data constructed
+there are 384806 prompts in Electronics test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 1325658 samples in Movies training data.
+data constructed
+there are 26513160 prompts in Movies training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 123960 samples in Movies validation data.
+['seen', '0']
+data constructed
+there are 247920 prompts in Movies validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 123960 samples in Movies test data.
+['seen', '0']
+data constructed
+there are 247920 prompts in Movies test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 123960 samples in Movies test data.
+['unseen', '0']
+data constructed
+there are 247920 prompts in Movies test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 1325653 samples in Movies training data.
+data constructed
+there are 26513060 prompts in Movies training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 123960 samples in Movies validation data.
+['seen', '0']
+data constructed
+there are 247920 prompts in Movies validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 123960 samples in Movies test data.
+['seen', '0']
+data constructed
+there are 247920 prompts in Movies test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 123960 samples in Movies test data.
+['unseen', '0']
+data constructed
+there are 247920 prompts in Movies test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 1325653 samples in Movies training data.
+data constructed
+there are 26513060 prompts in Movies training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 123960 samples in Movies validation data.
+['seen', '0']
+data constructed
+there are 247920 prompts in Movies validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 123960 samples in Movies test data.
+['seen', '0']
+data constructed
+there are 247920 prompts in Movies test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 123960 samples in Movies test data.
+['unseen', '0']
+data constructed
+there are 247920 prompts in Movies test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 871818 samples in CDs training data.
+data constructed
+there are 17436360 prompts in CDs training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 75258 samples in CDs validation data.
+['seen', '0']
+data constructed
+there are 150516 prompts in CDs validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 75258 samples in CDs test data.
+['seen', '0']
+data constructed
+there are 150516 prompts in CDs test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 75258 samples in CDs test data.
+['unseen', '0']
+data constructed
+there are 150516 prompts in CDs test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 871818 samples in CDs training data.
+data constructed
+there are 17436360 prompts in CDs training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 75258 samples in CDs validation data.
+['seen', '0']
+data constructed
+there are 150516 prompts in CDs validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 75258 samples in CDs test data.
+['seen', '0']
+data constructed
+there are 150516 prompts in CDs test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 75258 samples in CDs test data.
+['unseen', '0']
+data constructed
+there are 150516 prompts in CDs test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 871818 samples in CDs training data.
+data constructed
+there are 17436360 prompts in CDs training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 75258 samples in CDs validation data.
+['seen', '0']
+data constructed
+there are 150516 prompts in CDs validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 75258 samples in CDs test data.
+['seen', '0']
+data constructed
+there are 150516 prompts in CDs test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 75258 samples in CDs test data.
+['unseen', '0']
+data constructed
+there are 150516 prompts in CDs test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 160514 samples in Clothing training data.
+data constructed
+there are 3210280 prompts in Clothing training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing validation data.
+['seen', '0']
+data constructed
+there are 78774 prompts in Clothing validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing test data.
+['seen', '0']
+data constructed
+there are 78774 prompts in Clothing test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing test data.
+['unseen', '0']
+data constructed
+there are 78774 prompts in Clothing test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 160516 samples in Clothing training data.
+data constructed
+there are 3210320 prompts in Clothing training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing validation data.
+['seen', '0']
+data constructed
+there are 78774 prompts in Clothing validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing test data.
+['seen', '0']
+data constructed
+there are 78774 prompts in Clothing test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing test data.
+['unseen', '0']
+data constructed
+there are 78774 prompts in Clothing test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 160516 samples in Clothing training data.
+data constructed
+there are 3210320 prompts in Clothing training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing validation data.
+['seen', '0']
+data constructed
+there are 78774 prompts in Clothing validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing test data.
+['seen', '0']
+data constructed
+there are 78774 prompts in Clothing test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 39387 samples in Clothing test data.
+['unseen', '0']
+data constructed
+there are 78774 prompts in Clothing test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 28025 samples in Taobao training data.
+data constructed
+there are 560500 prompts in Taobao training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao validation data.
+['seen', '0']
+data constructed
+there are 12208 prompts in Taobao validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao test data.
+['seen', '0']
+data constructed
+there are 12208 prompts in Taobao test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao test data.
+['unseen', '0']
+data constructed
+there are 12208 prompts in Taobao test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 28025 samples in Taobao training data.
+data constructed
+there are 560500 prompts in Taobao training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao validation data.
+['seen', '0']
+data constructed
+there are 12208 prompts in Taobao validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao test data.
+['seen', '0']
+data constructed
+there are 12208 prompts in Taobao test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao test data.
+['unseen', '0']
+data constructed
+there are 12208 prompts in Taobao test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 28025 samples in Taobao training data.
+data constructed
+there are 560500 prompts in Taobao training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao validation data.
+['seen', '0']
+data constructed
+there are 12208 prompts in Taobao validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao test data.
+['seen', '0']
+data constructed
+there are 12208 prompts in Taobao test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 6104 samples in Taobao test data.
+['unseen', '0']
+data constructed
+there are 12208 prompts in Taobao test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+load training data
+there are 49281 samples in LastFM training data.
+data constructed
+there are 985620 prompts in LastFM training data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM validation data.
+['seen', '0']
+data constructed
+there are 2180 prompts in LastFM validation data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM test data.
+['seen', '0']
+data constructed
+there are 2180 prompts in LastFM test data.
+Reindex data with random indexing method
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM test data.
+['unseen', '0']
+data constructed
+there are 2180 prompts in LastFM test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+load training data
+there are 49281 samples in LastFM training data.
+data constructed
+there are 985620 prompts in LastFM training data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM validation data.
+['seen', '0']
+data constructed
+there are 2180 prompts in LastFM validation data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM test data.
+['seen', '0']
+data constructed
+there are 2180 prompts in LastFM test data.
+Reindex data with sequential indexing method
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM test data.
+['unseen', '0']
+data constructed
+there are 2180 prompts in LastFM test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+load training data
+there are 49281 samples in LastFM training data.
+data constructed
+there are 985620 prompts in LastFM training data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM validation data.
+['seen', '0']
+data constructed
+there are 2180 prompts in LastFM validation data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM test data.
+['seen', '0']
+data constructed
+there are 2180 prompts in LastFM test data.
+Reindex data with collaborative indexing method with token_size 100 and 10 cluster
+get prompt from ./prompt.txt
+there are 1090 samples in LastFM test data.
+['unseen', '0']
+data constructed
+there are 2180 prompts in LastFM test data.
